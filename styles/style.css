@@ -9,7 +9,7 @@ a{
 
 .section{
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 .logo{
   position: absolute;
@@ -58,4 +58,96 @@ a{
   font-weight: normal;
   font-family: poppins;
   letter-spacing: 2px;
+}
+
+.section1{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-15% , -15%);
+  
+}
+.section1__img{
+  width: 300px;
+}
+.section1__button{
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-80%, -50%)
+}
+.section1__button h2 ,h3{
+  font-family: roboto;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 60px;
+  font-size: 4rem;
+  color: #3d3d4a;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  margin: 0;
+}
+.section h2{
+  letter-spacing: 28px
+}
+.color{
+  color: #7a72ff;
+  font-family: serif;
+}
+.btn{
+  background: #2f2e41;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  padding: 10px 45px;
+  margin: 15px 0;
+  border-radius: 10% / 50%;
+  font-size: 1rem;
+  font-family: calibri;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #6e64ff;
+  transition: ease .2s ease ;
+  
+}
+.nav{
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 30px rgba(0,0,0,.2);
+  padding: 5px 0;
+  z-index: 1;
+  
+}
+
+.nav a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.nav a i{
+  color: rgba(0, 0, 0, .88);
+}
+
+.nav a:hover .fa-facebook-f{
+  color: #3b5998;
+}
+
+.nav a:hover .fa-youtube{
+  color: #ff0000;
+}
+
+.nav a:hover .fa-vk{
+  color: #00acee;
+}
+
+.nav a:hover .fa-twitter{
+  color: #00acee;
 }
