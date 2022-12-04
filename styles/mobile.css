@@ -1,0 +1,127 @@
+.home{
+  height: 500px;
+  padding: 20px;
+  margin-top: -165px;
+}
+.header{
+  background: rgba(0, 0, 0, 0.85);
+  padding-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header__logo{
+  display: inline;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+.header__a{
+  color: #F3F3F3;
+  font-size: 1.3rem;
+}
+.header__search{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 130px;
+  height: 30px;
+  padding: 10px;
+}
+.search__box input{
+  font-size: .7rem;
+  width: 80%;
+}
+.header__search:hover{
+  width: 180px;
+  border-radius: 30px;
+  transition: .2s linear;
+}
+
+.search__box i {
+  font-size: .7rem
+}
+.nav{
+  position: fixed;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+}
+.home__image{
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.home__img{
+  width: 100%;
+}
+.home__button{
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+.button__h2 ,.button__h3{
+  text-align: center;
+  text-indent: 40px
+}
+.btn{
+  display: block;
+  margin: 10px auto;
+}
+
+.nav{
+  padding: 10px;
+  position: sticky;
+  left: 5px;
+  top: 50%;
+  transform: translate(-0,-0px);
+  border-radius: 20px;
+  width: 50px;
+}
+.nav a{
+  padding: 10px;
+  margin: 0 auto;
+  
+}
+.notification h2{
+  font-size: 1.6rem;
+  text-align: center
+}
+.notification__input{
+  width: 85%;
+  height: 50px;
+}
+
+.about{
+  width: 100%;
+  flex-direction: column;
+  margin: 0;
+}
+.about__box{
+  width: 100%;
+}
+.about__box h1{
+  text-align: center;
+  font-size: 2rem;
+}
+.about__box h3{
+  text-align: center;
+  font-size: 1.1rem;
+}
+.about__box p{
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.about__img{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: block;
+}
