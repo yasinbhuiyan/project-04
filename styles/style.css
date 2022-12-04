@@ -1,3 +1,5 @@
+/* common code start*/
+
 *{
   margin: 0;
   padding: 0;
@@ -6,25 +8,36 @@
 a{
   text-decoration: none;
 }
-
-.section{
-  width: 100%;
-  height: auto;
+.color--home{
+  color: #7a72ff;
+  font-family: serif;
 }
-.logo{
+.color{
+  color: #7a72ff;
+  font-family: 'myriad pro';
+}
+
+/* common code end*/
+
+/* home start*/
+.home{
+  width: 100%;
+  height: 100vh;
+}
+.header__logo{
   position: absolute;
   top: 50px;
   left: 90px;
 }
-.logo__a{
+.header__a{
   font-size: 2rem;
   font-weight: bold;
   color: #2f2e41;
   letter-spacing: 1px;
   text-shadow: 2px 2px 30px rgba(0,0,0,.2)
 }
-.search{
-  position: absolute;
+.header__search{
+  position: fixed;
   right: 90px;
   top: 50px;
   width: 170px;
@@ -60,38 +73,34 @@ a{
   letter-spacing: 2px;
 }
 
-.section1{
+.home__image{
   position: absolute;
   top: 50%;
   left: 15%;
   transform: translate(-15% , -15%);
   
 }
-.section1__img{
+.home__img{
   width: 300px;
 }
-.section1__button{
+.home__button{
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 80%;
-  transform: translate(-80%, -50%)
+  transform: translate(-80%, -55%)
 }
-.section1__button h2 ,h3{
+.button__h2 ,.button__h3{
   font-family: roboto;
   font-weight: bold;
   letter-spacing: 3px;
-  line-height: 60px;
-  font-size: 4rem;
+  line-height: 50px;
+  font-size: 3rem;
   color: #3d3d4a;
   text-shadow: 3px 3px 10px rgba(0,0,0,0.1);
   margin: 0;
 }
-.section h2{
-  letter-spacing: 28px
-}
-.color{
-  color: #7a72ff;
-  font-family: serif;
+.button__h2{
+  letter-spacing: 23px
 }
 .btn{
   background: #2f2e41;
@@ -151,3 +160,128 @@ a{
 .nav a:hover .fa-twitter{
   color: #00acee;
 }
+/* home start*/
+
+
+/* product start*/
+.product{
+  width: 85%;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 30px rgba(163, 163, 163, 0.23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 40px 20px;
+  position: relative;
+  background-size: 1000px;
+}
+.product__h3{
+  margin: 30px;
+  letter-spacing: 2px;
+  color: #323543;
+}
+.product__section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  width: 100%;
+}
+.product__box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 330px;
+  margin: 10px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+.product__box:hover{
+  box-shadow: 3px 3px 30px rgba(138, 138, 138, 0.23);
+}
+.product__box img {
+  height: 100px;
+}
+
+.product__box p{
+  color: #4d4d4d70;
+  font-size: .9rem;
+  letter-spacing: .5px;
+  font-family: 'myriad pro';
+  margin-top: 20px;
+}
+.product__box a{
+  color: #2c2c2c;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+a.box__a{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  border-radius: 15% / 50%;
+  padding: 10px 15px;
+  display: none;
+  transition: .2s linear;
+}
+.product__box:hover .box__a{
+  display: flex;
+  background: linear-gradient(to left, #3784FF,#0C17FF);
+  color: #fff;
+}
+.product__box:hover a:last-child{
+  transition: all ease .2s;
+}
+/* product end*/
+
+
+/* about start*/
+.about{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  padding: 30px;
+  margin: 70px;
+
+}
+.about__box{
+  width: 40%;
+  font-family: 'myriad pro'
+}
+.about__box h1{
+  color: #333333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about__box h3{
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: 'myriad pro';
+  margin-bottom: 10px;
+  
+}
+.about__box p{
+  color: #bdbdbd;
+  font-size: 1rem;
+}
+.about__img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* about end*/
+
+
