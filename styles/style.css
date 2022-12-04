@@ -285,3 +285,66 @@ a.box__a{
 /* about end*/
 
 
+/* notification start*/
+.notification{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notification h2{
+  font-size: 2rem;
+  color: rgba(56, 56, 56, 1);
+  margin-bottom: 30px;
+}
+.notification__input{
+  background: #fff;
+  box-shadow: 2px 2px 30px rgba(138, 138, 138, 0.38);
+  width: 500px;
+  height: 60px;
+  border-radius: 7%  / 50%;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notification__input input{
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  
+}
+.notification__btn{
+  background: #202020;
+  padding: 10px 25px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+.notification__btn:hover{
+  background: #6b60ec;
+  transition: all ease .5s;
+}
+/* notification end*/
+
+
+/* footer start*/
+.footer{
+  padding: 15px 20px;
+  background: black;
+}
+.footer p{
+  text-align: center;
+  color: #FFFFFF;
+}
+/* footer end*/
